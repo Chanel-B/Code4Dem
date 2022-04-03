@@ -23,7 +23,7 @@ public class PlayerController {
     @GetMapping("/player")
     public String handleGetRequest(Model model) {
         model.addAttribute("players", players);
-        return "index";
+        return "player";
     }
 
     @PostMapping("/player")

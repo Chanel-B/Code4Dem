@@ -14,7 +14,7 @@
 	<name>myApp</name>
 	<description>this will contains my apps</description>
 	<properties>
-		<java.version>11</java.version>
+		<java.version>8</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
