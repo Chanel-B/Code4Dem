@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="stylesheet" href="css\heart.css">
+    <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="css\askQuestion.css">
+    <link rel="stylesheet" href="css\comments.css">
+    <link rel="stylesheet" href="css\imageDetails.css">
+    <link rel="stylesheet" href="css\inputComment.css">
+
+</head>
+
+<body>
+    <!--my scripts for javascript-->
+    <script src="js\galleryPage.js"></script>
+    <script src="js\askQuestion.js"></script>
+    <script src="js\scrollBar-showing-measure.js"></script>
+    <!--scripts-->
+
+    <div class="header">
+        <h2>MIRA MIRA</h2>
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div>
+    </div>
+
+    <div class="content">
+
+
+        <div class="row">
+            <div class="column">
+
+                <div class="gallery">
+                    <a target="_blank" href="imageDetails.html">
+                        <img src="img\1.jpeg" style="width:100%">
+                    </a>
+
+                    <div class="desc">Add a description of the image here. Insert the missing statement to get all the
+                        columns from the Customers table. </div>
+                    <div style="display: flex;">
+                        <div>
+                            <a style="width: 20%;" target="_blank" href="img\1.jpeg">
+                                <div style="text-align: center;">
+                                    Comments
+                                </div>
+                            </a>
+                        </div>
+                        <div style="width: 80%;">
+                            <!--user ratings-->
+                            <span class="heading" style="font-size: 12px;">User Rating</span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+
+
+
+
+                            <!--
+                        <button onclick="clickCounter()" type="button"
+                            style="display: flex; text-align: center; width: 80%; height: 100%;">
+                            <div style="text-align: center;">
+                                Like :
+                            </div>
+                            <div id="result" style="text-align: center;">
+                                0
+                            </div>
+                        </button>
+                        -->
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <img src="img\3.webp" style="width:100%">
+                <img src="img\4.jpg" style="width:100%">
+                <img src="img\6.jpg" style="width:100%">
+                <img src="img\2.jpg" style="width:100%">
+                <img src="img\11.jpg" style="width:100%">
+                <img src="img\12.jpg" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="img\4.jpg" style="width:100%">
+                <img src="img\10.jpg" style="width:100%">
+                <img src="img\2.jpg" style="width:100%">
+                <img src="img\3.webp" style="width:100%">
+                <img src="img\12.jpg" style="width:100%">
+                <img src="img\9.jpg" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="img\10.jpg" style="width:100%">
+                <img src="img\2.jpg" style="width:100%">
+                <img src="img\12.jpg" style="width:100%">
+                <img src="img\3.webp" style="width:100%">
+                <img src="img\10.jpg" style="width:100%">
+                <img src="img\1.jpeg" style="width:100%">
+                <img src="img\4.jpg" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="img\2.jpg" style="width:100%">
+                <img src="img\1.jpeg" style="width:100%">
+                <img src="img\9.jpg" style="width:100%">
+                <img src="img\6.jpg" style="width:100%">
+                <img src="img\3.webp" style="width:100%">
+                <img src="img\4.jpg" style="width:100%">
+            </div>
+        </div>
+
+    </div>
+
+    <!--chat or askQuestion Button-->
+    <button class="open-button" onclick="openForm()">Chat</button>
+
+    <div class="chat-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+            <h1>Chat</h1>
+
+            <label for="msg"><b>Message</b></label>
+            <textarea placeholder="Type message.." name="msg" required></textarea>
+
+            <button type="submit" class="btn">Send</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+    <!--chat or askQuestion Button-->
+</body>
+
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Font Awesome Icon Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css\heart.css">
+    <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="css\askQuestion.css">
+    <link rel="stylesheet" href="css\comments.css">
+    <link rel="stylesheet" href="css\imageDetails.css">
+    <link rel="stylesheet" href="css\inputComment.css">
+
+</head>
+
+<body>
+    <!--my scripts for javascript-->
+    <script src="js\galleryPage.js"></script>
+    <script src="js\askQuestion.js"></script>
+    <script src="js\scrollBar-showing-measure.js"></script>
+    <!--scripts-->
+
+    <div class="header">
+        <h2>MIRA MIRA</h2>
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div>
+    </div>
+
+    <div class="content">
+
+        <div class="imageDetails">
+
+            <img src="img\1.jpeg" style="width:100%">
+
+            <div class="desc">
+                Add a description of the image here. Insert the missing statement to get all the
+                columns from the Customers table.
+            </div>
+
+            <span class="heading">User Rating</span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <p>4.1 average based on 254 reviews.</p>
+            <hr style="border:3px solid #f1f1f1">
+
+            <div class="row">
+                <div class="side">
+                    <div>5 star</div>
+                </div>
+                <div class="middle">
+                    <div class="bar-container">
+                        <div class="bar-5"></div>
+                    </div>
+                </div>
+                <div class="side right">
+                    <div>150</div>
+                </div>
+                <div class="side">
+                    <div>4 star</div>
+                </div>
+                <div class="middle">
+                    <div class="bar-container">
+                        <div class="bar-4"></div>
+                    </div>
+                </div>
+                <div class="side right">
+                    <div>63</div>
+                </div>
+                <div class="side">
+                    <div>3 star</div>
+                </div>
+                <div class="middle">
+                    <div class="bar-container">
+                        <div class="bar-3"></div>
+                    </div>
+                </div>
+                <div class="side right">
+                    <div>15</div>
+                </div>
+                <div class="side">
+                    <div>2 star</div>
+                </div>
+                <div class="middle">
+                    <div class="bar-container">
+                        <div class="bar-2"></div>
+                    </div>
+                </div>
+                <div class="side right">
+                    <div>6</div>
+                </div>
+                <div class="side">
+                    <div>1 star</div>
+                </div>
+                <div class="middle">
+                    <div class="bar-container">
+                        <div class="bar-1"></div>
+                    </div>
+                </div>
+                <div class="side right">
+                    <div>20</div>
+                </div>
+            </div>
+
+
+
+            <br>
+            <!--comments section-->
+            <div style="text-align: center;">
+                <h2>Comments</h2>
+            </div>
+            <br>
+            <!--comment input-->
+            <form>
+                <div style="display: flex; width: 100%; ">
+
+                    <div style="width: 28%; margin: 5px;">
+                        <b>Enter Your UserName... </b> <br>
+                        <input style="width: 100%;" class="buttonI button2" type="text" id="fname" type="number"
+                            name="tentacles">
+                    </div>
+
+                    <div style="width: 70%;">
+                        <b>Enter Your Comment here...</b><br>
+                        <textarea style="width: 100%;" class="textArea1"
+                            placeholder="Enter Your Comment here..."> </textarea>
+                    </div>
+
+                </div>
+
+                <button class="button button1">Submit</button>
+                <input class="button button1" type="reset" value="Reset" />
+            </form>
+            <div class="container">
+                <img src="img\10.jpg" alt="Avatar" style="width:90px">
+                <p><span>Rebecca Flex.</span> CEO at Company.</p>
+                <p>No one is better than John Doe.</p>
+            </div>
+
+            <div class="container">
+                <img src="img\13.jpg" alt="Avatar" style="width:90px">
+                <p><span>Rebecca Flex.</span> CEO at Company.</p>
+                <p>No one is better than John Doe.</p>
+            </div>
+
+            <div class="container">
+                <img src="img\14.jpeg" alt="Avatar" style="width:90px">
+                <p><span>Rebecca Flex.</span> CEO at Company.</p>
+                <p>No one is better than John Doe.</p>
+            </div>
+
+            <div class="container">
+                <img src="img\15.webp" alt="Avatar" style="width:90px">
+                <p><span>Rebecca Flex.</span> CEO at Company.</p>
+                <p>No one is better than John Doe.</p>
+            </div>
+
+            <div class="container">
+                <img src="img\9.jpg" alt="Avatar" style="width:90px">
+                <p><span>Rebecca Flex.</span> CEO at Company.</p>
+                <p>No one is better than John Doe.</p>
+            </div>
+        </div>
+
+        <!--chat or askQuestion Button-->
+        <button class="open-button" onclick="openForm()">Chat</button>
+
+        <div class="chat-popup" id="myForm">
+            <form action="/action_page.php" class="form-container">
+                <h1>Chat</h1>
+
+                <label for="msg"><b>Message</b></label>
+                <textarea placeholder="Type message.." name="msg" required></textarea>
+
+                <button type="submit" class="btn">Send</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+        </div>
+        <!--chat or askQuestion Button-->
+
+    </div>
+</body>
+
+</html>
